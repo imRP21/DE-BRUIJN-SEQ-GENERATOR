@@ -38,12 +38,11 @@ string deBruijn(int n, int k, string A)
 
 	return S; 
 } 
-
-// Driver code 
+ 
 int main() 
 { 
 	int n = 3, k = 2; 
-	string A = "01"; 
+	string A = "01"; // A is our initial state which we have 
 	//If one wants to get other de Bruijn sequence, then corresponding values of n, k and A to be set according to the requirements.
 	
 	cout << deBruijn(n, k, A); 
