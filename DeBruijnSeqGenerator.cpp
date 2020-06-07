@@ -4,8 +4,7 @@ using namespace std;
 unordered_set<string> seen; 
 vector<int> edges; 
 
-// Modified DFS in which no edge 
-// is traversed twice 
+// Modified DFS in which no edge is traversed twice 
 void dfs(string node, int& k, string& A) 
 { 
 	for (int i = 0; i < k; ++i) { 
@@ -18,8 +17,7 @@ void dfs(string node, int& k, string& A)
 	} 
 } 
 
-// Function to find a de Bruijn sequence 
-// of order n on k characters 
+// Function to find a de Bruijn sequence of order n on k characters 
 string deBruijn(int n, int k, string A) 
 { 
 
@@ -46,7 +44,8 @@ int main()
 { 
 	int n = 3, k = 2; 
 	string A = "01"; 
-
+	//If one wants to get other de Bruijn sequence, then corresponding values of n, k and A to be set according to the requirements.
+	
 	cout << deBruijn(n, k, A); 
 
 	return 0; 
